@@ -1,0 +1,61 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <article>
+            <header>
+                <p>Dom's Diner
+                    <br>
+                    The best burgers and Pizzas in town</p>
+            </header>
+            <main>
+                <section id="menu-items">
+                </section>
+                <section class="hidden" id="bill-section">
+                    <p id="order-title">Your Order</p>
+                    <div id="ordered-items">
+                    </div>
+                    <hr>
+                    <div id="order-total">
+                        <p>
+                            <span>Total Price:</span><span class="money" id="total-price"></span>
+                        </p>
+                    </div>
+                    <button id="complete-order-btn">Complete Order</button>
+                </section>
+            </main>
+            <div class="hidden" id="payment-modal">
+                <form id="payment-form">
+                    <p>Enter Card Details</p>
+                    <input 
+                        type="text" 
+                        placeholder="Enter your name"
+                        name="user-name"
+                        title="Your name as it appears on the card"
+                        required>
+                    <input 
+                        type="text" 
+                        inputmode="numeric" 
+                        pattern="\d{16}" 
+                        placeholder="Enter card number" 
+                        title="Long number on the front of the card"
+                        required>
+                    <input 
+                        type="text" 
+                        placeholder="Enter CVV"
+                        pattern="\d{3}"
+                        title="3 Digit number on the back of the card"
+                        required>
+                    <button type="submit" id="pay-btn">Pay</button>
+                </form>
+            </div>
+            <div class="hidden" id="payment-complete-message">
+            </div>
+        </article>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

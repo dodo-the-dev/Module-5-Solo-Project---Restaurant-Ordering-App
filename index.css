@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Smythe", cursive;
+    box-sizing: border-box;
+} 
+
+/* Header section */
+
+header {
+    background-image: url("images/ferks-guare-KEZdWfYD-ow-unsplash.jpg");
+    background-size: 600px 325px;
+    background-position: center;
+    height: 167px;
+    width: 600px;
+}
+
+header >p {
+    color: white;
+    font-size: 35px;
+    padding: 40px 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Menu items section */
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    padding-left:20px;
+    border-bottom: 1px solid darkgrey;
+    margin: 0 20px;
+}
+
+.menu-item-text{
+    width: 75%;
+    padding-left: 10px;
+}
+
+.menu-emoji{
+    font-size: 400%;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.item-name{
+    font-size:28px;
+    margin: 0;
+}
+
+.item-ingredients{
+    color: darkgray;
+}
+
+.add-to-order-btn{
+    height: 50px;
+    width: 50px;
+    margin-top: 4%;
+    border-radius: 50%;
+    border: 1px solid #757575;
+    font-size: 200%;
+    color: #757575;
+    background-color: white;
+    padding: 0;
+}
+
+/* Bill Section */
+
+#bill-section {
+    padding: 0 20px;
+}
+
+hr{
+    border: solid 1px;
+}
+
+#order-title {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.money::before{
+    content: "$";
+}
+
+#order-total p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+}
+
+.item-purchased {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-purchased span {
+    font-size:28px;
+}
+
+.item-purchased a {
+    font-size: medium;
+    color: #757575;
+}
+
+#complete-order-btn {
+    width: 508px;
+    margin: 0 auto;
+    border: none;
+    color: white;
+    background-color: #16DB99;
+}
+
+/* Card modal */
+
+#payment-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    width: 550px;
+    height: 475px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 100px black;
+}
+
+#payment-modal input, button {
+    display: block;
+    height: 70px;
+    margin: 25px auto;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+#payment-modal input{
+    border: 0.5px solid #757575;
+    color: #757575;
+    width: 476px;
+}
+
+#payment-modal button {
+    width: 520px;
+    border: none;
+    color: white;
+    background-color: #16DB99;
+}
+
+#payment-modal p {
+    width: 300px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: verdana;
+    margin: 10px auto;
+    padding: 20px 0;
+}
+
+/* Order Confirmation section */
+
+#payment-complete-message p {
+    width: 475px;
+    margin: 50px auto;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 30px;
+    background-color: #ECFDF5;
+    color: #065F46;  
+}
+
+/* utility */
+
+.hidden{
+    display: none;
+}
